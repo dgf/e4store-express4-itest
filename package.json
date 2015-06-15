@@ -1,0 +1,40 @@
+{
+  "name": "express4-sequelize-session-itest",
+  "version": "0.3.0",
+  "description": "Express 4.x Sequelize session store integration test",
+  "keywords": [
+    "express",
+    "sequelize",
+    "session",
+    "store",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "author": "Danny Gräf <github@dagnu.de>",
+  "repository": "dgf/express4-sequelize-session-itest.git",
+  "dependencies": {
+    "body-parser": "^1.13.0",
+    "coffee-script": "^1.9.3",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.12.4",
+    "express-sequelize-session": "^0.3.0",
+    "express-session": "^1.11.3",
+    "multer": "^0.1.8",
+    "sequelize": "^3.2.0",
+    "sqlite3": "^3.0.8"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coffeelint": "^1.10.1",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "pretest": "cake lint",
+    "start": "node src/server.js",
+    "test": "cake spec"
+  }
+}
